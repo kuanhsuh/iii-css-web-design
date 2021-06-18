@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./util.css">
+
+    <style>
+
+        nav {
+            box-shadow: 0px 0px 10px -3px rgba(87,87,87,0.7);
+            font-size: 1.1rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav p {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        nav li {
+            margin-right: 2rem;
+        }
+
+        nav li:last-child {
+            margin-right: 0rem;
+        }
+
+        .logo-img {
+            width: 40px;
+        }
+
+        .bar {
+            height: 2px;
+            background: #2c3e50;
+            width: 25px;
+            margin-bottom: 6px;
+        }
+
+        .menu { display: none; }
+
+        .phone-btn { display: none; }
+
+        @media only screen and (max-width: 576px) {
+            .menu { display: block; }
+
+            .phone-btn {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                border: 2px solid #2c3e50;
+                color: #2c3e50;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav li {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+
+            nav li:last-child {
+                margin-bottom: 0rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="pt-1 pb-1">
+        <div class="container">
+            <div class="row">
+                <!-- Left Col -->
+                <a href="#" class="d-flex items-center mr-auto">
+                    <img src="./coding.png" alt="" class="logo-img mr-1">
+                    <p>Big Boy Inc.</p>
+                </a>
+
+                <a href="tel:0988111222" class="phone-btn mr-1">Call Me</a>
+                <!-- Hamburger Menu -->
+                <div class="menu pt-1">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <!-- Right Col -->
+                <ul class="items-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        var menu = document.querySelector(".menu");
+        var navList = document.querySelector("nav ul");
+
+        menu.addEventListener('click', function() {
+            if(navList.style.display === "none") {
+                navList.style.display = "flex";
+            } else {
+                navList.style.display = "none";
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./reset.css">
+
+    <style>
+        /* Desktop h1 fontsize 50 / color red
+           Mobile h1 fontsize 20/ color blue
+           Desktop p fontsize 20 / color red
+           Mobile p fontsize 15/ color blue
+        */
+
+        /* Desktop body background: blue
+           Mobile body Background: pink
+        */
+        h1 {
+            font-size: 50px;
+            color: red;
+        }
+
+        body {
+            background-color: blue;
+        }
+
+        p {
+            font-size: 20px;
+            color: red;
+        }
+
+        @media only screen and (max-width: 576px) {
+
+            /* When screen smaller than 576px */
+            h1 {
+                font-size: 20px;
+                color: blue;
+            }
+
+            body {
+                background-color: pink;
+            }
+
+            p {
+                font-size: 15px;
+                color: blue;
+            }
+        }
+
+        /* Desktop(991px)/Ipad/Mobile(576px) */
+
+        @media only screen and (min-width: 576px) and (max-width: 991px) {
+            h1 {
+                font-size: 30px;
+                color: aqua;
+            }
+
+            body {
+                background-color: orangered;
+            }
+
+            p {
+                font-size: 25px;
+                color: aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem, ipsum dolor.</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsam architecto! Ipsa id ea quae aperiam
+        culpa eos aliquid, neque doloribus quas eveniet porro dolorum laudantium, doloremque hic! Assumenda, quos.</p>
+</body>
+
+</html>
