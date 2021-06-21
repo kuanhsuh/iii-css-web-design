@@ -6,6 +6,8 @@
 
 第二天簡報 [連結](https://bit.ly/iii-web-design-2)
 
+下載 VSCODE [連結](https://code.visualstudio.com/)
+
 ## 第一天
 
 ---
