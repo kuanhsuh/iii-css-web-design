@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,60 +8,63 @@
 
     <style>
         * {
-            padding: 0;
-            margin: 0;
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
-        html {
-            font-size: 20px;
-        }
+        /* html {
+            font-size: 16px;
+        } */
 
         .container {
             width: 80%;
+            /* margin: 0 auto 0 auto; */
             margin: 0 auto;
             background-color: #222;
             height: 800px;
         }
 
         .inner {
+            background-color: pink;
+            margin: 0 auto 0 auto;
             width: 30%;
-            background: pink;
-            margin: 0 auto;
             height: 500px;
         }
 
         h1 {
             color: #fff;
+            /* Default 16px */
             font-size: 200%;
         }
 
+        /* ROOT */
+        /* Desktop/Mobile */
+
         .rem {
-            /* font-size: 2rem; */
-            font-size: 30px;
+            font-size: 3rem; /* 16*3 = 48px*/
             margin-left: 3rem;
         }
 
+        /* not very popular */
         .em {
             font-size: 2em;
         }
+
     </style>
 </head>
-
 <body>
     <!-- Pixel / Percentage -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="inner"></div>
-        <h1>Heading One</h1>
-    </div>
+        <h1>Heading one</h1>
+    </div> -->
 
-    <!-- root rem/em -->
-    <!-- <div class="rem">
+    <!-- rem/em -->
+    <div class="rem">
         <div class="em">
             This is a test
         </div>
-    </div> -->
-
+    </div>
 </body>
-
 </html>
