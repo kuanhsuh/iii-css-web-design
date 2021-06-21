@@ -8,6 +8,8 @@
 
 下載 VSCODE [連結](https://code.visualstudio.com/)
 
+下載 Chrome [連結](https://www.google.com/intl/zh-TW/chrome/)
+
 ## 第一天
 
 ---
