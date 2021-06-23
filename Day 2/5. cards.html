@@ -4,62 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Document</title>
 
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="./util.css">
+    <link rel="stylesheet" href="./grid.css">
 
-    <style>      
+    <style>
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .heading-2 {
+            font-size: 2rem;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            font-weight: 300;
+            color: rgb(159, 159, 159);
+        }
+
         .card {
-            box-shadow: 0px 0px 20px 0px rgba(171,171,171,1);
+            box-shadow: 0px 6px 15px 0px rgba(153, 153, 153, 1);
         }
 
         .card-content {
-            padding: 10px;
+            padding: 15px;
         }
 
     </style>
 </head>
 
 <body>
-    <section class="pt-4 pb-4">
+    <section class="pt-5 pb-5" style="background-color: #F5F6FA;">
         <div class="container">
-            <h2 class="text-center">Profile</h2>
-            <p class="text-center mb-4">Our current team members...</p>
+            <h2 class="text-center heading-2">Profile</h2>
+            <p class="text-center mb-4 lead">Lorem ipsum dolor sit amet.</p>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                         <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
                         <div class="card-content">
                             <h3 class="mb-2">John Doe</h3>
-                            <p class="mb-1">Lorem, ipsum dolor.</p>
+                            <p class="mb-2">Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 mt-sm-2">
                     <div class="card">
                         <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
                         <div class="card-content">
                             <h3 class="mb-2">John Doe</h3>
-                            <p class="mb-1">Lorem, ipsum dolor.</p>
+                            <p class="mb-2">Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 mt-sm-2">
                     <div class="card">
                         <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
                         <div class="card-content">
                             <h3 class="mb-2">John Doe</h3>
-                            <p class="mb-1">Lorem, ipsum dolor.</p>
+                            <p class="mb-2">Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
-    </section>  
+    </section>
 </body>
 
 </html>

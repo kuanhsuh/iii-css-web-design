@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +7,17 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="./util.css">
+    <link rel="stylesheet" href="./grid.css">
 
     <style>
         footer {
-            background-color: #16a085;
-            color: #fff;
+            color: white;
+            background-color: #285E61;
         }
 
         footer h3 {
-            border-bottom: 2px solid #2ecc71;
-            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
         }
 
         footer p {
@@ -39,13 +37,13 @@
         }
 
         .copyright {
-            background-color: #127964;
-            color: #fff;
-            font-size: 0.8rem;
+            background-color: #234E52;
+            color: white;
+            font-size: 0.9rem;
         }
 
         .md-icon {
-            width: 30px;
+            width: 40px;
         }
 
         .sm-icon {
@@ -53,58 +51,50 @@
         }
     </style>
 </head>
-
 <body>
-    <footer class="pt-4 pb-4">
+    <footer class="pb-5 pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>About Us</h3>
-                    <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus ad quod tenetur
-                        veniam nulla quae esse suscipit animi, porro maiores!</p>
-
-                    <ul class="d-flex mt-1">
-                        <li>
-                            <img src="./fb.png" alt="" class="md-icon mr-1">
-                        </li>
-                        <li>
-                            <img src="./fb.png" alt="" class="md-icon mr-1">
-                        </li>
-                        <li>
-                            <img src="./fb.png" alt="" class="md-icon">
-                        </li>
-                    </ul>
+                    <h3 class="mb-3">About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus recusandae similique nam molestias qui. Aut!</p>
+                    <div class="d-flex">
+                        <img src="./facebook.png" alt="" class="md-icon mr-1">
+                        <img src="./facebook.png" alt="" class="md-icon mr-1">
+                        <img src="./facebook.png" alt="" class="md-icon">
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h3>Sitemap</h3>
-                    <ul class="mt-2">
+                    <h3 class="mb-3">Sitemap</h3>
+                    <!-- unordered-list -->
+                    <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Product</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
+
                 </div>
                 <div class="col-md-4">
-                    <h3>Contact Us</h3>
-                    <ul class="mt-2">
-                        <li class="d-flex">
-                            <img src="./pin.png" alt="" class="sm-icon mr-2">
-                            Address: 123. Main St</li>
-                        <li class="d-flex">
-                            <img src="./pin.png" alt="" class="sm-icon mr-2">
-                            Tel: 0988-111-222</li>
-                        <li class="d-flex">
-                            <img src="./pin.png" alt="" class="sm-icon mr-2">
-                            Email: qwer@gmail.com</li>
+                    <h3 class="mb-3">Contact Us</h3>
+                    <ul>
+                        <li class="d-flex items-center">
+                            <img src="./pin.png" class="sm-icon mr-2">
+                            Add: 123 Main St.</li>
+                        <li class="d-flex items-center">
+                            <img src="./pin.png" class="sm-icon mr-2">
+                            Tel: 0955-111-222</li>
+                        <li class="d-flex items-center">
+                            <img src="./pin.png" class="sm-icon mr-2">
+                            Email: abc@gmail.com</li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="copyright text-center pt-1 pb-1">
-        2021 &#169; Copyright Big Boy All rights Reserved.
+
+    <div class="text-center pt-2 pb-2 copyright">2018 &#169; Copyright Big Boy All rights Reserved.
     </div>
 </body>
-
 </html>

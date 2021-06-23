@@ -7,18 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./reset.css">
-
     <style>
-        /* Desktop h1 fontsize 50 / color red
-           Mobile h1 fontsize 20/ color blue
-           Desktop p fontsize 20 / color red
-           Mobile p fontsize 15/ color blue
-        */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-        /* Desktop body background: blue
-           Mobile body Background: pink
-        */
         h1 {
             font-size: 50px;
             color: red;
@@ -30,12 +25,11 @@
 
         p {
             font-size: 20px;
-            color: red;
+            color: green;
         }
 
+        /* Phone */
         @media only screen and (max-width: 576px) {
-
-            /* When screen smaller than 576px */
             h1 {
                 font-size: 20px;
                 color: blue;
@@ -47,16 +41,16 @@
 
             p {
                 font-size: 15px;
-                color: blue;
+                color: cyan;
             }
         }
 
-        /* Desktop(991px)/Ipad/Mobile(576px) */
-
-        @media only screen and (min-width: 576px) and (max-width: 991px) {
+        /* Ipad */
+        /*  576px < width < 991px */
+        @media only screen and (min-width: 577px) and (max-width: 991px) {
             h1 {
                 font-size: 30px;
-                color: aqua;
+                color: black;
             }
 
             body {
@@ -65,17 +59,19 @@
 
             p {
                 font-size: 25px;
-                color: aqua;
+                color: black;
             }
         }
+
     </style>
 </head>
 
 <body>
     <h1>Lorem, ipsum dolor.</h1>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsam architecto! Ipsa id ea quae aperiam
-        culpa eos aliquid, neque doloribus quas eveniet porro dolorum laudantium, doloremque hic! Assumenda, quos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto rem repellendus sed blanditiis
+        consectetur quasi praesentium suscipit inventore iure quisquam ea reprehenderit, et animi, illo, perspiciatis
+        quam cumque similique.</p>
 </body>
 
 </html>

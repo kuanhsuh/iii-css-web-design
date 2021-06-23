@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./util.css">
+    <link rel="stylesheet" href="./grid.css">
+
+    <style>
+        .max-550 {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        .form-label {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .form-control {
+            display: block;
+            padding: 0.5rem 0.25rem;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            height: 200px
+        }
+
+        textarea:focus, input:focus {
+            outline: none;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4AAF51;
+            color: white;
+            padding: 10px 30px;
+            text-decoration: none;
+            transition: all 0.5s;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #398b3f;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="pt-5 pb-5">
+        <div class="container max-550">
+            <h2 class="text-center mb-1">Contact Us</h2>
+            <p class="text-center mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, natus.</p>
+
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">First Name:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div> <!-- col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Last Name:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div> <!-- col-md-6 -->
+                </div> <!-- row -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label class="form-label">Company</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Phone:</label>
+                            <input type="tel" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Email:</label>
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <button class="btn">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>

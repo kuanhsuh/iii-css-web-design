@@ -1,26 +1,77 @@
-/* Button */
+/* Navbar */
 
-.btn {
-  /* DIY */
-  background: #1abc9c;
-  padding: 10px 20px;
-  letter-spacing: 1px;
-  color: #fff;
-  display: inline-block;
-  text-decoration: none;
-  transition: all 0.4s;
-  border:none;
+nav {
+    box-shadow: 0px 3px 10px -3px rgb(177, 177, 177);
+}
+nav ul {
+    display: flex;
+    list-style: none;
 }
 
-.btn:hover {
-  background: #16a085;
+nav a {
+    color: #2c3e50;
 }
 
-/* Form , Input */
+nav li {
+    margin-right: 2rem;
+}
 
-.form-group { margin-bottom: 1.5rem; }
+nav li:last-child {
+    margin-right: 0rem;
+}
 
-.form-group label {
+.logo-img {
+    width: 40px;
+}
+
+.menu {
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background: #2c3e50;
+    margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 576px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    nav li {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    nav li:last-child {
+        margin-bottom: 0rem;
+    }
+}
+
+/* Typography */
+.heading-2 {
+    font-size: 2rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: rgb(159, 159, 159);
+}
+
+
+/* Form */
+
+.form-label {
     display: inline-block;
     margin-bottom: 0.5rem;
     font-size: 0.8rem;
@@ -28,26 +79,76 @@
 
 .form-control {
     display: block;
-    width: 100%;
     padding: 0.5rem 0.25rem;
-    border: 1px solid #ccc;
+    width: 100%;
     border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 200px
 }
 
 textarea:focus, input:focus {
     outline: none;
 }
 
-textarea {
-    height: 200px;
+/* Button */
+
+.btn {
+    display: inline-block;
+    background-color: #4AAF51;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: all 0.5s;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #398b3f;
 }
 
 /* Icon */
 
+
 .md-icon {
-  width: 30px;
+    width: 40px;
 }
 
 .sm-icon {
-  width: 18px;
+    width: 18px;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    background-color: #285E61;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+}
+
+footer p {
+    line-height: 1.5;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #fff;
+}
+
+.copyright {
+    background-color: #234E52;
+    color: white;
+    font-size: 0.9rem;
 }
